@@ -31,10 +31,12 @@ public class MainClass {
             
             int resultIS[] = run.insertionSort(cap.clone(), cap.length);
             int resultSS[] = run.selectionSort(cap.clone(), cap.length);
+            int resultMS[] = run.mergeSort(cap.clone(), 0, (cap.length-1));
            
             print(cap, "Original array");
             print(resultIS, "Insertion Sort");
             print(resultSS, "Selection Sort");
+            print(resultMS, "Merge Sort");
          
         } catch (NumberFormatException | IOException e) {
             e.printStackTrace();
